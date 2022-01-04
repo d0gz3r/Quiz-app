@@ -1,0 +1,9 @@
+.startBtn {
+  width: 40%;
+  background-color: #000;
+  transition: 0.4s;
+}
+.startBtn:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, .8);
+}

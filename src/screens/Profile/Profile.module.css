@@ -1,0 +1,113 @@
+.header{
+  position: relative;
+  margin-top: 10px;
+  border: 5px solid #fff;
+  border-radius: 50px;
+  box-shadow: -1px 9px 12px 5px rgba(34, 60, 80, 0.2);
+  background: linear-gradient(51deg, rgba(201,69,69,1) 0%, rgba(68,237,254,1) 0%, rgba(161,68,254,1) 100%);
+  width: 100%;
+  height: 20rem;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.avatar{
+  margin: 20px auto;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  height: 90px;
+  width: 90px;
+  padding-top: 18px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(104, 104, 104);
+  background-color: #fff;
+}
+.header__name{
+  color: #fff;
+}
+.result{
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #effdff;
+  box-shadow: -1px 9px 12px 5px rgba(34, 60, 80, 0.2);
+  transition: .4s;
+}
+.result:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.result__info{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.result__info__title{
+  font-size: 25px;
+  font-weight: bold;
+  color: #13373c;
+  margin-bottom: -2px;
+}
+.result__info__subtitle{
+  font-size: 20px;
+  color: #19adc0;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.result__info__progress{
+  margin-bottom: 10px;
+  width: 50vw;
+  background-color: rgba(0, 214, 214, 0.2);
+}
+
+.arrow{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.header__edit{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 35px;
+  height: 35px;
+  transition: .4s;
+}
+.header__edit:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+
+@media(max-width: 400px){
+  .result__info__title{
+    font-size: 20px;
+    margin-bottom: 0px;
+  } 
+  .result__info__subtitle{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 767px){
+  .arrow{
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+  } 
+}
+
+@media(max-width: 650px){
+  .header{
+    height: 15rem;
+  }
+}
