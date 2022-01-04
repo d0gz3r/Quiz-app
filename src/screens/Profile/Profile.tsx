@@ -23,9 +23,7 @@ const Profile: React.FC<IProfile> = ({setCurrentScene, setCurrentTest}) => {
   const [userName, setUserName] = useState(localStorage.getItem('userName') || 'Без имени');
   const [inputData, setInputData] = useState('');
   const [isModal, setIsModal] = useState(false);
-  const state = useTypedSelector((state) => state.resultsReducer);
-
-  console.log(state);
+  const state = useTypedSelector((state) => state.resultsReducer); 
 
   const handleClose = () => {
     setIsModal(false);

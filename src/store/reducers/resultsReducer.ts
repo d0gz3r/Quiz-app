@@ -19,7 +19,7 @@ let initialState: ResultsState[] = [
   }
 ]
 
-if(Object.keys(localStorage).length !== 0){
+if(Object.keys(localStorageState).length !== 0){
   initialState = localStorageState;
 }
 
